@@ -18,7 +18,7 @@ def load_commands():
   return commands
 
 def run():
-  logging.basicConfig(format="%(asctime)s %(levelname)s %(module)s: %(message)s", level=logging.DEBUG)
+  logging.basicConfig(format="%(asctime)s %(levelname)s %(module)s: %(message)s", level=logging.INFO)
 
   commands = load_commands()
 
