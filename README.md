@@ -14,3 +14,7 @@ The configuration for this tool needs to be located in a file called
 aws_key:<your aws api key>
 aws_secret:<your aws secret>
 ```
+
+## Options
+
+- `list vaults` List available vaults.
