@@ -2,6 +2,7 @@ import logging
 import os
 from ConfigParser import SafeConfigParser
 from ConfigParser import NoOptionError
+from ConfigParser import NoSectionError
 
 class GCConfig(SafeConfigParser):
   _error_messages = []
@@ -23,6 +24,9 @@ class GCConfig(SafeConfigParser):
         self.get('configuration', required_option)
       except NoOptionError:
         self._error_messages.append("The configuration key '{0}' was not found in the configuration file.".format(required_option))
+      except NoSectionError:
+        self._error_messages.append("The configuration section was not found in the configuration file.")
+        break
 
     return len(self._error_messages) > 0
 
