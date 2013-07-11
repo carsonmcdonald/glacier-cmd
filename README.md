@@ -18,3 +18,4 @@ aws_secret:<your aws secret>
 ## Options
 
 - `list vaults` List available vaults.
+- `create vault <vault name>` Create a vault with the given name.
