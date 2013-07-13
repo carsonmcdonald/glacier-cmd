@@ -20,3 +20,4 @@ aws_secret:<your aws secret>
 - `list vaults` List available vaults.
 - `create vault <vault name>` Create a vault with the given name.
 - `delete vault <vault name>` Delete the vault with the given name.
+- `vault info <vault name>` Get information on the vault with the given name.
