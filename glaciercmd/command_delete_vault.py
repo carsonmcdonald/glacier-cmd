@@ -12,7 +12,7 @@ class CommandDeleteVault(object):
       vault = None
 
     if vault is None:
-      print "Vaule named '{}' does not exist.".format(args[2])
+      print "Vault named '{}' does not exist.".format(args[2])
     else:
       try:
         vault = glacier_connection.delete_vault(args[2])
