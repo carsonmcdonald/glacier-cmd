@@ -21,3 +21,4 @@ aws_secret:<your aws secret>
 - `create vault <vault name>` Create a vault with the given name.
 - `delete vault <vault name>` Delete the vault with the given name.
 - `vault info <vault name>` Get information on the vault with the given name.
+- `upload file <file name> to vault <vault name>` Upload a file to the given vault.
