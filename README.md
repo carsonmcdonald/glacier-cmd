@@ -13,6 +13,7 @@ The configuration for this tool needs to be located in a file called
 [configuration]
 aws_key:<your aws api key>
 aws_secret:<your aws secret>
+dynamodb_table:<DynamoDB table to use>
 ```
 
 ## Options
