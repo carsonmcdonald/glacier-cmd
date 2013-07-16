@@ -23,3 +23,4 @@ dynamodb_table:<DynamoDB table to use>
 - `delete vault <vault name>` Delete the vault with the given name.
 - `vault info <vault name>` Get information on the vault with the given name.
 - `upload file <file name> to vault <vault name>` Upload a file to the given vault.
+- `delete archive <archive id> from <vault name>` Delete an archive from the given vault.
