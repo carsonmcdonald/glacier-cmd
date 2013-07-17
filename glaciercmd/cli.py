@@ -17,6 +17,11 @@ def load_commands():
 
   return commands
 
+def print_help(commands):
+  print "Valid commands are:"
+  for command in commands:
+    print "\t{}".format(command.help())
+
 def run():
   logging.basicConfig(format="%(asctime)s %(levelname)s %(module)s: %(message)s", level=logging.INFO)
 
@@ -39,7 +44,8 @@ def run():
       found_command = True
 
   if not found_command:
-    logging.error('No valid command found.');
+    logging.error('No command found.');
+    print_help(commands)
 
 if __name__ == '__main__':
   run()

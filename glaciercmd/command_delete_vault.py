@@ -23,5 +23,8 @@ class CommandDeleteVault(object):
   def accept(self, args):
     return len(args) >= 3 and args[0] == 'delete' and args[1] == 'vault'
 
+  def help(self):
+    return "delete vault <vault name>"
+
 def command_init():
   return CommandDeleteVault()

@@ -23,5 +23,8 @@ class CommandDeleteArchiveFromVault(object):
   def accept(self, args):
     return len(args) >= 4 and args[0] == 'delete' and args[1] == 'archive' and args[3] == 'from'
 
+  def help(self):
+    return "delete archive <archive name> from <vault name>"
+
 def command_init():
   return CommandDeleteArchiveFromVault()

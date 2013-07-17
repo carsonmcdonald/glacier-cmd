@@ -14,5 +14,8 @@ class CommandVaultInfo(object):
   def accept(self, args):
     return len(args) >= 3 and args[0] == 'vault' and args[1] == 'info'
 
+  def help(self):
+    return "vault info <vault name>"
+
 def command_init():
   return CommandVaultInfo()

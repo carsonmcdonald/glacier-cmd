@@ -11,5 +11,8 @@ class CommandListVaults(object):
   def accept(self, args):
     return len(args) >= 2 and args[0] == 'list' and args[1] == 'vaults'
 
+  def help(self):
+    return "list vaults"
+
 def command_init():
   return CommandListVaults()

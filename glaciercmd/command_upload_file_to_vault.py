@@ -32,5 +32,8 @@ class CommandUploadFileToVault(object):
   def accept(self, args):
     return len(args) >= 6 and args[0] == 'upload' and args[1] == 'file' and args[3] == 'to' and args[4] == 'vault'
 
+  def help(self):
+    return "upload file <filename> to vault <vault name>"
+
 def command_init():
   return CommandUploadFileToVault()
