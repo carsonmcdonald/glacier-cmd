@@ -25,3 +25,7 @@ dynamodb_table:<DynamoDB table to use>
 - `upload file <file name> to vault <vault name>` Upload a file to the given vault.
 - `delete archive <archive id> from <vault name>` Delete an archive from the given vault.
 - `list known archives for vault <vault name>` List known archives from the given vault.
+
+## License
+
+MIT - See the LICENSE file
