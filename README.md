@@ -24,3 +24,4 @@ dynamodb_table:<DynamoDB table to use>
 - `vault info <vault name>` Get information on the vault with the given name.
 - `upload file <file name> to vault <vault name>` Upload a file to the given vault.
 - `delete archive <archive id> from <vault name>` Delete an archive from the given vault.
+- `list known archives for vault <vault name>` List known archives from the given vault.
