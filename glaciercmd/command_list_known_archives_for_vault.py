@@ -23,8 +23,8 @@ class CommandListKnownArchivesForVault(object):
 
       count = 1
       for archive in archive_id_table.scan():
-        time_str = datetime.datetime.fromtimestamp(archive['Upload Timestamp']).strftime('%d, %b %Y')
-        print "{}.\tFilename: {}\n\tTimestamp: {}\n\tArchive ID: {}".format(count, archive['Filename'], time_str, archive['Archive ID'])
+        time_str = datetime.datetime.fromtimestamp(archive['upload_timestamp']).strftime('%d, %b %Y')
+        print "{}.\tFilename: {}\n\tTimestamp: {}\n\tArchive ID: {}".format(count, archive['filename'], time_str, archive['archive_id'])
         count += 1
 
   def accept(self, args):

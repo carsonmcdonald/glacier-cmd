@@ -24,9 +24,9 @@ class CommandUploadFileToVault(object):
       dynamo_connection=DynamoDBConnection(aws_access_key_id=config.get('configuration', 'aws_key'), aws_secret_access_key=config.get('configuration', 'aws_secret'))
       archive_id_table = Table(config.get('configuration', 'dynamodb_table'), connection=dynamo_connection)
       archive_id_table.put_item(data={
-            'Archive ID': archive_id,
-            'Filename': os.path.abspath(args[2]),
-            'Upload Timestamp': int(time.time())
+            'archive_id': archive_id,
+            'filename': os.path.abspath(args[2]),
+            'upload_timestamp': int(time.time())
       })
 
   def accept(self, args):
