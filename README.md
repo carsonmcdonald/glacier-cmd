@@ -3,6 +3,8 @@ glacier-cmd
 
 AWS Glacier command line client
 
+Work in progress...
+
 ## Configuration
 
 The configuration for this tool needs to be located in a file called
