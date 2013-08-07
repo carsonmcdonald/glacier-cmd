@@ -28,6 +28,7 @@ dynamodb_table:<DynamoDB table to use>
 - `delete archive <archive id> from <vault name>` Delete an archive from the given vault.
 - `list known archives for vault <vault name>` List known archives from the given vault.
 - `create inventory job for vault <vault name>` Create an inventory job for the given vault.
+- `list jobs for vault <vault name>` List current jobs for the given vault.
 
 ## License
 
