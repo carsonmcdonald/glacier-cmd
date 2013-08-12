@@ -3,7 +3,7 @@ glacier-cmd
 
 AWS Glacier command line client
 
-*Work in progress...*
+**Work in progress...**
 
 ## Configuration
 
